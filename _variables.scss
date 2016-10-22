@@ -31,3 +31,41 @@
 // ======================================================
 $body-bg: #fff !default;
 $body-color: $gray-dark !default;
+
+// Button
+//
+// Settings for the `<button>` element.
+// ======================================================
+
+// Shared styles
+$button-border: none !default;
+$button-background-focus: lighten($secondary-color, 4%) !default;
+$button-font-size: 1.3rem !default;
+$button-height: 36px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+
+// Disabled styles
+$button-disabled-background: #DFDFDF !default;
+$button-disabled-color: #9F9F9F !default;
+
+// Raised buttons
+$button-raised-background: $secondary-color !default;
+$button-raised-background-hover: lighten($button-raised-background, 5%) !default;
+$button-raised-color: #fff !default;
+
+// Large buttons
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+
+// Flat buttons
+$button-flat-color: #343434 !default;
+$button-flat-disabled-color: lighten(#999, 10%) !default;
+
+// Floating buttons
+$button-floating-background: $secondary-color !default;
+$button-floating-background-hover: $button-floating-background !default;
+$button-floating-color: #fff !default;
+$button-floating-size: 40px !default;
+$button-floating-large-size: 56px !default;
+$button-floating-radius: 50% !default;
