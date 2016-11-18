@@ -108,3 +108,33 @@
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
+
+
+// ----- And opacity for all ! -----
+// ======================================================
+@mixin opacity-for-all( $opacity-value ){
+  opacity: $opacity-value;
+  $opacity-ie: $opacity-value * 100;
+  filter: alpha(opacity = $opacity-ie);
+}
+
+// Data-* using the opacity-for-all mixin
+// ======================================================
+@for $i from 0 through 10 {
+  [data-opacity="#{$i}"]{
+    @include opacity-for-all( $i/10 );
+  }
+}
+
+// ----- And rem fallback function for all ! -----
+// based on the $base-font-size above
+// ======================================================
+@function rem( $size ){
+  $remSize: $size / $base-font-size;
+  @return $remSize * 1rem;
+}
+
+@mixin rem-font-size( $size ) {
+  font-size: $size * 1px;
+  font-size: rem( $size );
+}
