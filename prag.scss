@@ -10,23 +10,20 @@
 //
 // Settings
 // ===========================================================================
-@import "mixins";
 @import "colors";
-
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 
-@import "type";
-@import "utilities";
-@import "animations";
 //
 // Tools
 // ===========================================================================
-
+@import "mixins";
 
 //
 // Generic
 // ===========================================================================
-
+@import "type";
+@import "utilities";
+@import "animations";
 
 //
 // Elements
